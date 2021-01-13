@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI8-4C-psB" userLabel="Play Button" customClass="THPlayButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI8-4C-psB" userLabel="Play Button" customClass="THPlayButton">
                                 <rect key="frame" x="466" y="43" width="72" height="72"/>
                                 <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -252,11 +251,15 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="panKnobs" destination="L0p-va-nq7" id="GhD-Ws-oNC"/>
-                        <outlet property="playButton" destination="MI8-4C-psB" id="AUK-ad-Tzx"/>
+                        <outlet property="playButton" destination="MI8-4C-psB" id="VWZ-0x-seX"/>
                         <outlet property="playLabel" destination="ygM-lP-wn4" id="Es5-ay-mhr"/>
-                        <outlet property="rateKnob" destination="R28-Bx-LQk" id="U87-rE-PQQ"/>
-                        <outlet property="volumeKnobs" destination="mVX-cG-rNP" id="bdK-99-Cji"/>
+                        <outlet property="rateKnob" destination="R28-Bx-LQk" id="QhR-DS-TTV"/>
+                        <outletCollection property="panKnobs" destination="pTG-PM-Oc5" collectionClass="NSMutableArray" id="9lE-D7-8v4"/>
+                        <outletCollection property="panKnobs" destination="3Th-fR-qvd" collectionClass="NSMutableArray" id="BlW-OJ-rSq"/>
+                        <outletCollection property="panKnobs" destination="L0p-va-nq7" collectionClass="NSMutableArray" id="ZkS-WJ-zKw"/>
+                        <outletCollection property="volumeKnobs" destination="mVX-cG-rNP" collectionClass="NSMutableArray" id="btI-It-Ea4"/>
+                        <outletCollection property="volumeKnobs" destination="Yel-l8-FZg" collectionClass="NSMutableArray" id="Lt6-tG-rZl"/>
+                        <outletCollection property="volumeKnobs" destination="2fz-nX-lyT" collectionClass="NSMutableArray" id="I2V-92-4P2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
